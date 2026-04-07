@@ -1,0 +1,39 @@
+/* Mobile 1 kolom 12 baris */
+/* Tablet 2 kolom 6 baris */
+
+@media only screen and (min-width: 360px){
+.container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 150px);
+}
+
+.item{
+    background-color: rgb(46, 37, 146);
+    border: 1px solid black
+
+}
+
+
+
+
+
+
+/* Tablet */
+@media only screen and (min-width: 768px){
+.container{
+    display: grid;
+    grid-template-columns: 
+    repeat(2, 1fr);
+    grid-template-rows: repeat(6, 150px);
+    /* repeat(4, 100); mengulangi 4 kollom dengan 100px !!tapi tidak relative*/ 
+/* repeat (4, 1fr); maka akan membuat 4 kolom dengan ukuran yang relative tergantung device  */
+gap: 20px;
+}
+
+.item{
+    background-color: lightgreen;
+    border: 1px solid black
+    
+}
+}
