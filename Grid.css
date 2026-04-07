@@ -13,7 +13,7 @@
     border: 1px solid black
 
 }
-
+}
 
 
 
@@ -35,5 +35,19 @@ gap: 20px;
     background-color: lightgreen;
     border: 1px solid black
     
+}
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px){
+.container{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 150px);
+}
+
+.item{
+    background-color: rgb(119, 146, 37);
+    border: 1px solid black
+
 }
 }
